@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as m;
+
+.container {
+	@include m.container;
+}
+
+.gridContainer {
+	@include m.gridContainer;
+}
+
+a {
+	text-decoration: none;
+}
+
+.win {
+	font-family: "Twemoji Country Flags", sans-serif;
+}

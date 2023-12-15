@@ -1,0 +1,61 @@
+{
+	"Custom hook": {
+		"prefix": "ch",
+		"body": ["export const ${1:${2:$TM_FILENAME_BASE}} = () => {", "}"],
+		"description": "Create custom hook snippet with filename as the hook name"
+	},
+	"Custom hook for GET request": {
+		"prefix": "grch",
+		"body": [
+			"import notify from \"@utils/notify\";",
+			"import { useEffect, useState, useCallback } from \"react\"",
+			"",
+			"export const ${1:${2:$TM_FILENAME_BASE}} = () => {",
+			"\tconst [loading, setLoading] = useState(true);",
+			"\tconst [data, setData] = useState<any>();",
+			"",
+			"\tconst $3 = useCallback(async () => {",
+			"\t\ttry {",
+			"\t\t\tsetLoading(true);",
+			"// Use api service below and use setData to store the api response",
+			"\t\t} catch (err: any) {",
+			"\t\t\tnotify(err.message,\"error\");",
+			"\t\t} finally {",
+			"\t\t\tsetLoading(false);",
+			"\t\t}",
+			"\t}, [$4]);",
+			"",
+			"\tuseEffect(() => {",
+			"\t\t$3();",
+			"\t}, [$3]);",
+			"\treturn { loading, data }",
+			"}"
+		],
+		"description": "Create custom hook snippet with filename as the hook name with api request template"
+	},
+	"Async useCallback": {
+		"prefix": "auc",
+		"body": [
+			"const $1 = useCallback(async () => {",
+			"try {",
+			"} catch (err: any) {",
+			"} finally {",
+			"}",
+			"}, [$2]);"
+		],
+		"description": "Create async useCallback hooks with try catch and finally"
+	},
+	"Service": {
+		"prefix": "cs",
+		"body": [
+			"export const $1 = async (config?: RawAxiosRequestConfig) => {",
+			"\treturn apiRequest<IApiResponse<$2>>({",
+			"\t\t...config,",
+			"\t\turl: \"$3\",",
+			"\t\tmethod: \"$4\"",
+			"\t});",
+			"};"
+		],
+		"description": "Create service"
+	}
+}

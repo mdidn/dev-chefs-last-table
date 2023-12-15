@@ -1,0 +1,122 @@
+@use "variables" as v;
+
+@mixin display-1 {
+	// paste here
+}
+
+@mixin display-1 {
+	// paste here
+}
+
+@mixin heading-1 {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 60px;
+}
+
+@mixin heading-2 {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.2em;
+}
+
+@mixin heading-3 {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 38px;
+}
+
+@mixin heading-4 {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+@mixin heading-5 {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: -0.02em;
+}
+
+@mixin heading-6 {
+	// paste here
+}
+
+@mixin subheading-1 {
+	// paste here
+}
+
+@mixin subheading-2 {
+	// paste here
+}
+
+@mixin subheading-3 {
+	// paste here
+}
+
+@mixin button-1 {
+	// paste here
+}
+
+@mixin button-2 {
+	// paste here
+}
+
+@mixin button-3 {
+	// paste here
+}
+
+@mixin paragraph {
+	// paste here
+}
+
+@mixin body-xl {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+@mixin body-lg {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+@mixin body-md {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin body-sm {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin body-xs {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+}

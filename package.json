@@ -1,0 +1,27 @@
+{
+  "name": "chef-last-table",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "eslint": "8.55.0",
+    "prettier": "^3.1.0",
+    "turbo": "1.11.2",
+    "eslint-config-custom": "^0.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {}
+}

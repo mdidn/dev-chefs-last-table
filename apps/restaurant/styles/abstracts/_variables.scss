@@ -1,0 +1,198 @@
+@use "sass:map";
+
+/**
+* Font families
+*/
+$poppins: "Poppins", sans-serif;
+$inter: "Inter", sans-serif;
+
+/**
+* Breakpoint -------------------- 
+*/
+$mobile-down: 600px;
+$mobile-up: 601px;
+$tablet-down: 1024px;
+$tablet-up: 1025px;
+$laptop-down: 1440px;
+$laptop-up: 1441px;
+
+/**
+* Color -------------------- 
+*/
+
+$colors: (
+	"white": #ffffff,
+	"black": #000000,
+
+	"gray-25": #fcfcfd,
+	"gray-50": #f9fafb,
+	"gray-100": #f2f4f7,
+	"gray-200": #eaecf0,
+	"gray-300": #d0d5dd,
+	"gray-400": #98a2b3,
+	"gray-500": #667085,
+	"gray-600": #475467,
+	"gray-700": #344054,
+	"gray-800": #1d2939,
+	"gray-900": #101828,
+
+	"orange-25": #fcf2e6,
+	"orange-50": #fde7cc,
+	"orange-100": #fcd7aa,
+	"orange-200": #fac380,
+	"orange-300": #f9af55,
+	"orange-400": #f79b2b,
+	"orange-500": #f68701,
+	"orange-600": #cd7000,
+	"orange-700": #a45a00,
+	"orange-800": #7b4300,
+	"orange-900": #4d2a00,
+
+	"teal-25": #eef3f3,
+	"teal-50": #d1dad9,
+	"teal-100": #b3c1c1,
+	"teal-200": #8ea2a2,
+	"teal-300": #688383,
+	"teal-400": #426464,
+	"teal-500": #1d4645,
+	"teal-600": #183a39,
+	"teal-700": #132e2e,
+	"teal-800": #0e2322,
+	"teal-900": #091717,
+
+	"error-25": #fffbfa,
+	"error-50": #fef3f2,
+	"error-100": #fee4e2,
+	"error-200": #fecdca,
+	"error-300": #fca19b,
+	"error-400": #f97066,
+	"error-500": #f04437,
+	"error-600": #d92c20,
+	"error-700": #b42318,
+	"error-800": #912018,
+	"error-900": #7a2619,
+
+	"warning-25": #fffcf5,
+	"warning-50": #fffaeb,
+	"warning-100": #fef0c7,
+	"warning-200": #fedf89,
+	"warning-300": #fec84b,
+	"warning-400": #fdb022,
+	"warning-500": #f79009,
+	"warning-600": #dc6803,
+	"warning-700": #b54707,
+	"warning-800": #93370c,
+	"warning-900": #7a2e0e,
+
+	"success-25": #f6fef9,
+	"success-50": #ecfdf3,
+	"success-100": #d1fadf,
+	"success-200": #a6f4c5,
+	"success-300": #6be9a6,
+	"success-400": #31d583,
+	"success-500": #12b669,
+	"success-600": #039754,
+	"success-700": #027a48,
+	"success-800": #055f3a,
+	"success-900": #054e31,
+
+	"blue-25": #F1F8FF,
+	"blue-50": #EDF6FE,
+	"blue-100": #D9EBFD,
+	"blue-200": #B3D7FB,
+	"blue-300": #8EC3F8,
+	"blue-400": #68AFF6,
+	"blue-500": #429BF4,
+	"blue-600": #3F88D3,
+	"blue-700": #336FAB,
+	"blue-800": #2C5E8F,
+	"blue-900": #264968,
+
+	"shadow-outline": 0px 0px 0px 1px #eaecf0,
+	"shadow-xs-focused-4px": 0px 0px 0px 4px #D2DADA,
+);
+
+$white: map.get($colors, "white");
+$black: map.get($colors, "black");
+
+$gray-25: map.get($colors, "gray-25");
+$gray-50: map.get($colors, "gray-50");
+$gray-100: map.get($colors, "gray-100");
+$gray-200: map.get($colors, "gray-200");
+$gray-300: map.get($colors, "gray-300");
+$gray-400: map.get($colors, "gray-400");
+$gray-500: map.get($colors, "gray-500");
+$gray-600: map.get($colors, "gray-600");
+$gray-700: map.get($colors, "gray-700");
+$gray-800: map.get($colors, "gray-800");
+$gray-900: map.get($colors, "gray-900");
+
+$orange-25: map.get($colors, "orange-25");
+$orange-50: map.get($colors, "orange-50");
+$orange-100: map.get($colors, "orange-100");
+$orange-200: map.get($colors, "orange-200");
+$orange-300: map.get($colors, "orange-300");
+$orange-500: map.get($colors, "orange-500");
+$orange-600: map.get($colors, "orange-600");
+$orange-700: map.get($colors, "orange-700");
+$orange-800: map.get($colors, "orange-800");
+$orange-900: map.get($colors, "orange-900");
+
+$teal-25: map.get($colors, "teal-25");
+$teal-50: map.get($colors, "teal-50");
+$teal-100: map.get($colors, "teal-100");
+$teal-200: map.get($colors, "teal-200");
+$teal-300: map.get($colors, "teal-300");
+$teal-500: map.get($colors, "teal-500");
+$teal-600: map.get($colors, "teal-600");
+$teal-700: map.get($colors, "teal-700");
+$teal-800: map.get($colors, "teal-800");
+$teal-900: map.get($colors, "teal-900");
+
+$error-25: map.get($colors, "error-25");
+$error-50: map.get($colors, "error-50");
+$error-100: map.get($colors, "error-100");
+$error-200: map.get($colors, "error-200");
+$error-300: map.get($colors, "error-300");
+$error-500: map.get($colors, "error-500");
+$error-600: map.get($colors, "error-600");
+$error-700: map.get($colors, "error-700");
+$error-800: map.get($colors, "error-800");
+$error-900: map.get($colors, "error-900");
+
+$warning-25: map.get($colors, "warning-25");
+$warning-50: map.get($colors, "warning-50");
+$warning-100: map.get($colors, "warning-100");
+$warning-200: map.get($colors, "warning-200");
+$warning-300: map.get($colors, "warning-300");
+$warning-500: map.get($colors, "warning-500");
+$warning-600: map.get($colors, "warning-600");
+$warning-700: map.get($colors, "warning-700");
+$warning-800: map.get($colors, "warning-800");
+$warning-900: map.get($colors, "warning-900");
+
+$success-25: map.get($colors, "success-25");
+$success-50: map.get($colors, "success-50");
+$success-100: map.get($colors, "success-100");
+$success-200: map.get($colors, "success-200");
+$success-300: map.get($colors, "success-300");
+$success-500: map.get($colors, "success-500");
+$success-600: map.get($colors, "success-600");
+$success-700: map.get($colors, "success-700");
+$success-800: map.get($colors, "success-800");
+$success-900: map.get($colors, "success-900");
+
+$blue-25: map.get($colors, "blue-25");
+$blue-50: map.get($colors, "blue-50");
+$blue-100: map.get($colors, "blue-100");
+$blue-200: map.get($colors, "blue-200");
+$blue-300: map.get($colors, "blue-300");
+$blue-400: map.get($colors, "blue-300");
+$blue-500: map.get($colors, "blue-500");
+$blue-600: map.get($colors, "blue-600");
+$blue-700: map.get($colors, "blue-700");
+$blue-800: map.get($colors, "blue-800");
+$blue-900: map.get($colors, "blue-900");
+
+$shadow-outline: map.get($colors, "shadow-outline");
+$shadow-xs-focused-4px: map.get($colors, "shadow-xs-focused-4px");

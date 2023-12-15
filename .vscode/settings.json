@@ -1,0 +1,8 @@
+{
+	"editor.codeActionsOnSave": [
+		"source.addMissingImports",
+		"source.fixAll.eslint",
+		"source.organizeImports"
+	],
+	"typescript.preferences.importModuleSpecifier": "non-relative"
+}

@@ -1,0 +1,102 @@
+{
+	"@use variables": {
+		"prefix": "v",
+		"body": ["@use \"styles/abstracts/variables\" as v;"],
+		"description": "@use variables"
+	},
+	"@use typo-mixins": {
+		"prefix": "t",
+		"body": ["@use \"styles/abstracts/typo-mixins\" as t;"],
+		"description": "@use typo-mixins"
+	},
+	"@use mixins": {
+		"prefix": "m",
+		"body": ["@use \"styles/abstracts/mixins\" as m;"],
+		"description": "@use mixins"
+	},
+	"@include heading-1": {
+		"prefix": "ih1",
+		"body": ["@include t.heading-1;"],
+		"description": "@include heading-1"
+	},
+	"@include heading-2": {
+		"prefix": "ih2",
+		"body": ["@include t.heading-2;"],
+		"description": "@include heading-2"
+	},
+	"@include heading-3": {
+		"prefix": "ih3",
+		"body": ["@include t.heading-3;"],
+		"description": "@include heading-3"
+	},
+	"@include heading-4": {
+		"prefix": "ih4",
+		"body": ["@include t.heading-4;"],
+		"description": "@include heading-4"
+	},
+	"@include heading-5": {
+		"prefix": "ih5",
+		"body": ["@include t.heading-5;"],
+		"description": "@include heading-5"
+	},
+	"@include heading-6": {
+		"prefix": "ih6",
+		"body": ["@include t.heading-6;"],
+		"description": "@include heading-6"
+	},
+	"@include paragraph": {
+		"prefix": "ip",
+		"body": ["@include t.paragraph;"],
+		"description": "@include paragraph"
+	},
+	"@include button-1": {
+		"prefix": "ibt1",
+		"body": ["@include t.button-1;"],
+		"description": "@include button-1"
+	},
+	"@include button-2": {
+		"prefix": "ibt2",
+		"body": ["@include t.button-2;"],
+		"description": "@include button-2"
+	},
+	"@include button-3": {
+		"prefix": "ibt3",
+		"body": ["@include t.button-3;"],
+		"description": "@include button-3"
+	},
+	"@include body-1": {
+		"prefix": "ib1",
+		"body": ["@include t.body-1;"],
+		"description": "@include body-1"
+	},
+	"@include body-2": {
+		"prefix": "ib2",
+		"body": ["@include t.body-2;"],
+		"description": "@include body-2"
+	},
+	"@include body-3": {
+		"prefix": "ib3",
+		"body": ["@include t.body-3;"],
+		"description": "@include body-3"
+	},
+	"@include container": {
+		"prefix": "ic",
+		"body": ["@include m.container;"],
+		"description": "@include container"
+	},
+	"@include gridContainer": {
+		"prefix": "igc",
+		"body": ["@include m.gridContainer;"],
+		"description": "@include gridContainer"
+	},
+	"media query tablet down": {
+		"prefix": "mqt",
+		"body": ["@media (max-width: v.\\$tablet-down){", "$1", "}"],
+		"description": "media query tablet down"
+	},
+	"media query mobile down": {
+		"prefix": "mqm",
+		"body": ["@media (max-width: v.\\$mobile-down){", "$1", "}"],
+		"description": "media query mobile down"
+	}
+}

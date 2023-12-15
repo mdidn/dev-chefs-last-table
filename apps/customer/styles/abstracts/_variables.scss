@@ -1,0 +1,27 @@
+@use "sass:map";
+
+/**
+* Font families
+*/
+$poppins: "Poppins", sans-serif;
+$inter: "Inter", sans-serif;
+
+/**
+* Breakpoint -------------------- 
+*/
+$mobile-down: 600px;
+$mobile-up: 601px;
+$tablet-down: 1024px;
+$tablet-up: 1025px;
+$laptop-down: 1440px;
+$laptop-up: 1441px;
+
+/**
+* Color -------------------- 
+*/
+
+$colors: (
+	"blue": #292562,
+);
+
+$blue: map.get($colors, "blue");
